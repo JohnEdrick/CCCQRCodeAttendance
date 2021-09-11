@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@-webkit-keyframes topToBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#add-student,
+#delete-student,
+#view-student,
+#update-student,
+#add-teacher,
+#delete-teacher,
+#view-teacher,
+#update-teacher {
+  display: none;
+}
+
+#plain-text-pass {
+  display: none;
+}
+
+.modal-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.modal-bg .modal-container {
+  margin: 50px auto;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  width: 430px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-top: 30px;
+  -webkit-animation-name: topToBottom;
+          animation-name: topToBottom;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.modal-bg .modal-container .title {
+  height: 67px;
+  background: #01015b;
+  color: #fcf158;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  width: 100%;
+}
+
+.modal-bg .modal-container .message-container {
+  width: 390px;
+  margin: 20px;
+}
+
+.modal-bg .modal-container .message-container div {
+  word-break: break-all;
+  position: relative;
+  text-align: center;
+  margin: 30px;
+}
+
+.modal-bg .modal-container .message-container div h1 {
+  color: #4a4646;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.7rem;
+}
+
+.modal-bg .modal-container .message-container div .view-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 99;
+  top: -15px;
+  right: 30%;
+  z-index: 1;
+}
+
+.modal-bg .modal-container .message-container div:hover {
+  cursor: pointer;
+}
+
+.modal-bg .modal-container .message-container div:hover .view-tooltip {
+  visibility: visible;
+}
+
+.modal-bg .modal-container .message-container div h5,
+.modal-bg .modal-container .message-container div h2 {
+  color: #8a8585;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.modal-bg .modal-container form {
+  margin-top: 20px;
+}
+
+.modal-bg .modal-container form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-bg .modal-container form input {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  width: 335px;
+  height: 43px;
+  background: #fbfbfb;
+  border: 0.2vh solid rgba(97, 95, 95, 0.5);
+  border-radius: 4px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.modal-bg .modal-container form label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.modal-bg .modal-container button {
+  width: 335px;
+  height: 43px;
+  background-color: #01015b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.modal-bg .modal-container button:hover {
+  background-color: #141480;
+}
+
+.modal-bg .modal-container #cancel-btn {
+  background-color: #bab8b8;
+}
+
+.modal-bg .modal-container #cancel-btn:hover {
+  background-color: #d6d4d4;
+}
+/*# sourceMappingURL=modals.css.map */

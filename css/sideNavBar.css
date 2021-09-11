@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@-webkit-keyframes topToBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+nav {
+  height: 100%;
+  width: 402px;
+  background-color: #01015b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .title {
+  margin-top: 20px;
+  color: #fcf158;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+nav .logout {
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 402px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+nav .active {
+  background: #060664;
+}
+
+nav img {
+  margin-top: 50px;
+  width: 125px;
+}
+
+nav ul {
+  margin-top: 25px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav button {
+  width: 402px;
+  height: 65px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+nav button:hover,
+nav .logout:hover {
+  cursor: pointer;
+  background: #060664;
+}
+
+@media only screen and (max-width: 405px) {
+  nav {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=sideNavBar.css.map */
